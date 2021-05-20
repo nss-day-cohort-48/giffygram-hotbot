@@ -24,3 +24,5 @@ export const fetchUsers = () => {
 export const getUsers = () => {
     return [...applicationState.users]
 }
+
+
