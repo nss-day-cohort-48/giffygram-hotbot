@@ -1,3 +1,10 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": 1,
+      "full-name": "Steve Browny",
+      "email": "headwizard@nss.com",
+      "password": "steve"
+    }
+  ]
 }
