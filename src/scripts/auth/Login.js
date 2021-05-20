@@ -1,4 +1,5 @@
-import { getUsers } from "../data/provider.js"
+import {getUsers} from "../data/provider.js"
+import { renderApp } from "../main.js"
 
 
 document.addEventListener("click", clickEvent => {
@@ -18,6 +19,9 @@ document.addEventListener("click", clickEvent => {
         if (foundUser !== null) {
             localStorage.setItem("gg_user", foundUser.id)
             document.querySelector(".giffygram").dispatchEvent(new CustomEvent("stateChanged"))
+        } else {
+            window.alert(`Hey BRO, you need to make an account`)
+            renderApp()
         }
     }
 })
