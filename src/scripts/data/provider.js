@@ -17,11 +17,9 @@ const applicationState = {
 };
 
 export const fetchUsers = () => {
-  
   return fetch(`${apiURL}/users`)
     .then((res) => res.json())
     .then((usersResponse) => {
-console.log("users return from api")
       applicationState.users = usersResponse;
     });
 };
@@ -31,15 +29,32 @@ export const getUsers = () => {
 };
 
 export const fetchPosts = () => {
-
   return fetch(`${apiURL}/posts`)
     .then((res) => res.json())
     .then((postResponse) => {
-      console.log("users return post from api")
       applicationState.posts = postResponse;
     });
 };
 
 export const getPosts = () => {
   return [...applicationState.posts];
+};
+
+export const createNewPost = (taco) => {
+  const fetchPosts = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(taco),
+  };
+
+  return fetch(`${API}/posts`, fetchPosts)
+    .then((res) => res.json())
+    .then((morePosts) => {
+      return morePosts;
+      // mainContainer.dispatchEvent(
+      //   new CustomEvent("stateChanged")
+      // );
+    });
 };
