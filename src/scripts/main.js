@@ -7,6 +7,11 @@ const applicationElement = document.querySelector(".giffygram");
 export const renderApp = () => {
   fetchUsers()
     .then(() => {
+      return fetchPosts();
+    })
+    .then(() => {
+
+      console.log("rendering html")
       const user = parseInt(localStorage.getItem("gg_user"));
 
       if (user) {
@@ -14,8 +19,7 @@ export const renderApp = () => {
       } else {
         applicationElement.innerHTML = LoginForm();
       }
-    })
-    .then(fetchPosts());
+    });
 };
 
 applicationElement.addEventListener("stateChanged", () => {
