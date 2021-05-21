@@ -9,15 +9,15 @@ export const PostList = () => {
   `;
 
   for (const post of posts) {
-    return (html += `
+  html += `
       <div class="post">  
-    ${post.title}
+    <h3>${post.title}</h3> 
       <img class="postImage" src="${post.URL}" alt="A very cool turtle team" />
-      ${post.description}
+      <p>${post.description}<p>
       </div>
-    `);
+    ` 
   }
 
-  console.log(JSON.stringify(posts));
+  
   return html;
 };
