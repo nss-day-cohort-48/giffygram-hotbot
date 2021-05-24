@@ -13,10 +13,8 @@ export const Header = () => {
                 HotBotGram
             </h1>
               
-            
-
                 <img id="directMessageIcon"  src="/images/fountain-pen.svg" onclick alt="Direct message">
-
+            
                 <div class="notification__count">
                 0
                 </div>

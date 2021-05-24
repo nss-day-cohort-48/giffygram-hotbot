@@ -1,6 +1,6 @@
 export const MessageForm = () => {
     return `
-        <div class="message" style="display:none">
+        <div class="message">
         
             <select class="select--friends">
                 <option>Select User</option>
