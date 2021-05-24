@@ -1,4 +1,5 @@
-import { getPosts } from "../data/provider.js";
+import { getPosts, createNewPost } from "../data/provider.js";
+const applicationElement = document.querySelector(".giffygram");
 
 export const PostList = () => {
   const posts = getPosts();
@@ -33,3 +34,31 @@ export const PostList = () => {
 
   return html;
 };
+
+applicationElement.addEventListener("click", (clickEvent) => {
+  if (clickEvent.target.id === "newPost__submit") {
+    // Get what the user typed into the form fields
+    const titleHere = document.querySelector(
+      "input[name='postTitle']"
+    ).value;
+    const urlHere = document.querySelector(
+      "input[name='postURL']"
+    ).value;
+    const descriptionHere = document.querySelector(
+      "textarea[name='postDescription']"
+    ).value;
+
+    const newPostFields = {
+      title: titleHere,
+      url: urlHere,
+      description: descriptionHere,
+      timestamp:
+        new Date().toLocaleTimeString() +
+        " | " +
+        new Date().toLocaleDateString(),
+      isFavorited: false,
+    };
+
+    createNewPost(newPostFields);
+  }
+});

@@ -49,11 +49,11 @@ export const createNewPost = (newPost) => {
     body: JSON.stringify(newPost),
   };
 
-  return fetch(`${API}/posts`, fetchPosts)
+  return fetch(`${apiURL}/posts`, fetchPosts)
     .then((res) => res.json())
     .then(() => {
       // return morePosts
-      mainContainer.dispatchEvent(
+      applicationElement.dispatchEvent(
         new CustomEvent("stateChanged")
       );
     });
