@@ -11,10 +11,32 @@
     {
       "id": 1,
       "title": "Snack break",
-      "URL": "https://media.giphy.com/media/WynKmCK0LwykM/giphy.gif",
+      "url": "https://media.giphy.com/media/WynKmCK0LwykM/giphy.gif",
       "description": "Squirtle Squad",
       "timestamp": "2021-05-21",
       "isFavorited": false
+    },
+    {
+      "title": "Bugz",
+      "url": "https://media.giphy.com/media/66dLOWrLqrgxWHSeVR/giphy.gif",
+      "description": "I love debugger!!",
+      "id": 3
+    },
+    {
+      "title": "When lunch is only 30 away",
+      "url": "https://media.giphy.com/media/0kbIdrKDPV0hMyPcew/giphy.gif",
+      "description": "It do be like that sometimes",
+      "timestamp": 1621873829385,
+      "isFavorited": false,
+      "id": 4
+    },
+    {
+      "title": "Lunch <3",
+      "url": "https://media.giphy.com/media/mUQCVhZxs8XUpkHo4u/giphy.gif",
+      "description": "<3",
+      "timestamp": "11:33:08 AM | 5/24/2021",
+      "isFavorited": false,
+      "id": 5
     }
   ],
   "userPosts": [],

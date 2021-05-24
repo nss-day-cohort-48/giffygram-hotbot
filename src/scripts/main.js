@@ -10,8 +10,6 @@ export const renderApp = () => {
       return fetchPosts();
     })
     .then(() => {
-
-      
       const user = parseInt(localStorage.getItem("gg_user"));
 
       if (user) {

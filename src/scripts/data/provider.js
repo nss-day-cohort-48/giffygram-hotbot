@@ -17,11 +17,9 @@ const applicationState = {
 };
 
 export const fetchUsers = () => {
-  
   return fetch(`${apiURL}/users`)
     .then((res) => res.json())
     .then((usersResponse) => {
-
       applicationState.users = usersResponse;
     });
 };
@@ -31,7 +29,6 @@ export const getUsers = () => {
 };
 
 export const fetchPosts = () => {
-
   return fetch(`${apiURL}/posts`)
     .then((res) => res.json())
     .then((postResponse) => {
@@ -41,4 +38,23 @@ export const fetchPosts = () => {
 
 export const getPosts = () => {
   return [...applicationState.posts];
+};
+
+export const createNewPost = (newPost) => {
+  const fetchPosts = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newPost),
+  };
+
+  return fetch(`${apiURL}/posts`, fetchPosts)
+    .then((res) => res.json())
+    .then(() => {
+      // return morePosts
+      applicationElement.dispatchEvent(
+        new CustomEvent("stateChanged")
+      );
+    });
 };
