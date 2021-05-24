@@ -1,7 +1,7 @@
 .navigation {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: start;
+    justify-content: space-between;
     border-bottom: 1px solid lightblue;
     padding: 0.5em 0 0.5em 1em;
     margin-bottom: 2em;
@@ -18,13 +18,13 @@
 }
 
 .navigation__name {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-left: 0.5rem;
     padding-top: 0.1rem;
 }
 
-.navigation__icon > img {
-    height: 2rem;
+.navigation__icon {
+    max-height: 5rem;
 }
 
 
@@ -37,7 +37,7 @@
 }
 
 .navigation__message > img {
-    height: 2rem;
+    max-height: 2px;
 }
 
 .notification__count{
@@ -58,9 +58,22 @@
 }
 
 .navigation__logout {
+    align-self: center;
     margin-right: 2em;
+    
 }
 
 #directMessageIcon {
     cursor: pointer;
+}
+
+.logoutButton {
+    align-self: center;
+    justify-content: end;
+    color: #404040;
+    font-family: "Comfortaa", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
 }

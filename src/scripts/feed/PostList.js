@@ -10,9 +10,9 @@ export const PostList = () => {
 
   for (const post of posts) {
   html += `
-      <div class="post">  
+      <div class="post ">  
     <h3>${post.title}</h3> 
-      <img class="postImage" src="${post.URL}" alt="A very cool turtle team" />
+      <img class="post__image" src="${post.url}" alt="A very cool turtle team" />
       <p>${post.description}<p>
       </div>
     ` 
