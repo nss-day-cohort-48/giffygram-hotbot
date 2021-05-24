@@ -1,20 +1,23 @@
 import { createNewPost } from "../data/provider.js";
+const applicationElement = document.querySelector(".giffygram");
 
-mainContainer.addEventListener("click", (clickEvent) => {
-  if (clickEvent.target.id === "submitButton") {
+applicationElement.addEventListener("click", (clickEvent) => {
+  if (clickEvent.target.id === "newPost__submit") {
     // Get what the user typed into the form fields
-    const titleHERE = document.querySelector(
-      "input[name='partyParentsName']"
+    const titleHere = document.querySelector(
+      "input[name='postTitle']"
     ).value;
-    const urlHERE = document.querySelector(
-      "input[name='partyLastName']"
+    const urlHere = document.querySelector(
+      "input[name='postURL']"
+    ).value;
+    const descriptionHere = document.querySelector(
+      "input[name='postDescription']"
     ).value;
 
     const newPostFields = {
-      title: titleHERE,
-      url: urlHERE,
-      description: hmmmm,
-      timestamp: hmmm,
+      title: titleHere,
+      url: urlHere,
+      description: descriptionHere,
     };
 
     createNewPost(newPostFields);

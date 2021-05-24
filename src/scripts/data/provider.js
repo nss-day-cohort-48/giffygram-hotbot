@@ -53,8 +53,5 @@ export const createNewPost = (taco) => {
     .then((res) => res.json())
     .then((morePosts) => {
       return morePosts;
-      // mainContainer.dispatchEvent(
-      //   new CustomEvent("stateChanged")
-      // );
     });
 };
