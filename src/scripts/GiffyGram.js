@@ -8,9 +8,10 @@ export const GiffyGram = () => {
   return `
 
       ${Header()}
+      
 
     <div class="giffygram__feed">
-    
+      
       ${PostList()}
 
     </div>

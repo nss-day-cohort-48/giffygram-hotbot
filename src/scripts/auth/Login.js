@@ -1,5 +1,6 @@
 import { getUsers } from "../data/provider.js";
 import { renderApp } from "../main.js";
+import { RegistrationForm } from "./Register.js";
 
 document.addEventListener("click", (clickEvent) => {
   if (clickEvent.target.id === "loginButton") {
@@ -46,5 +47,6 @@ export const LoginForm = () => {
             </form>
             <button id="loginButton">Login</button>
         </div>
+        ${RegistrationForm()}
     `;
 };
