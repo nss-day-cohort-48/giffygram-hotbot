@@ -40,18 +40,21 @@ export const getPosts = () => {
   return [...applicationState.posts];
 };
 
-export const createNewPost = (taco) => {
+export const createNewPost = (newPost) => {
   const fetchPosts = {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(taco),
+    body: JSON.stringify(newPost),
   };
 
   return fetch(`${API}/posts`, fetchPosts)
     .then((res) => res.json())
-    .then((morePosts) => {
-      return morePosts;
+    .then(() => {
+      // return morePosts
+      mainContainer.dispatchEvent(
+        new CustomEvent("stateChanged")
+      );
     });
 };

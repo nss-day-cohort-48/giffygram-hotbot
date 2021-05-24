@@ -11,7 +11,7 @@
     {
       "id": 1,
       "title": "Snack break",
-      "URL": "https://media.giphy.com/media/WynKmCK0LwykM/giphy.gif",
+      "url": "https://media.giphy.com/media/WynKmCK0LwykM/giphy.gif",
       "description": "Squirtle Squad",
       "timestamp": "2021-05-21",
       "isFavorited": false
