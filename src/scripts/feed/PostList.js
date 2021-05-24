@@ -12,7 +12,7 @@ export const PostList = () => {
   html += `
       <div class="post ">  
     <h3>${post.title}</h3> 
-      <img class="post__image" src="${post.URL}" alt="A very cool turtle team" />
+      <img class="post__image" src="${post.url}" alt="A very cool turtle team" />
       <p>${post.description}<p>
       </div>
     ` 
