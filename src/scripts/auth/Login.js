@@ -25,7 +25,7 @@ document.addEventListener("click", (clickEvent) => {
         .querySelector(".giffygram")
         .dispatchEvent(new CustomEvent("stateChanged"));
     } else {
-      window.alert(`Hey BRO, you need to make an account`);
+      window.alert(`Account does not exist!`);
       renderApp();
     }
   }
