@@ -1,8 +1,10 @@
-import { getForm } from "../data/provider.js";
+import { getForm, getUsers, setForm } from "../data/provider.js";
+
+const applicationElement = document.querySelector(".giffygram");
 
 
 export const MessageForm = () => {
-
+    const users = getUsers()
     const form = getForm()
 
     let html = ""
@@ -16,14 +18,26 @@ export const MessageForm = () => {
         
             <select class="select--friends">
                 <option>Select User</option>
+                    ${users.map((users) => {
+                        return `<option value="${users.id}">${users.fullName}</option>`
+                    })}
+                
             </select>
 
-            <input class="message__section" placeholder="Type Message Here" name="messageFormBody" type="text">
+            <textarea class="message__section" placeholder="Type Message Here" name="messageFormBody" type="text"></textarea>
             
-        </div>
-    `
+            <button id="sendMessageId" class="sendMessageButton messageButton">Send</button>
+            <button id="cancelMessageId" class="cancelMessageButton messageButton">Cancel</button>
+            </div>
+            `
     }
 
     return html
 }
 
+applicationElement.addEventListener("click", (messageClick) => {
+    if (messageClick.target.id === "cancelMessageId") {
+        
+        setForm()
+    }
+})

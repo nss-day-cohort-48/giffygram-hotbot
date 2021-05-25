@@ -40,11 +40,12 @@
 }
 
 .message {
-    
+
+    background-color: rgb(114, 221, 212);
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 1px dotted lightblue;
+    border: 3px solid dimgray;
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgb(143, 143, 143);
@@ -57,4 +58,14 @@
 .message__author {
     font-weight: bold;
     margin-bottom: 1rem;
+}
+
+.sendMessageButton {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.messageButton {
+    
+    padding: .2rem;
 }
