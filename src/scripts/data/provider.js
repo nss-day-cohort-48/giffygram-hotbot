@@ -14,18 +14,31 @@ const applicationState = {
   favorites: [],
   messages: [],
   userMessages: [],
-  showForm: false
+  showForm: false,
+  submitPost: false,
 };
 
 export const setForm = () => {
-  applicationState.showForm = !applicationState.showForm
-
-  applicationElement.dispatchEvent(new CustomEvent("stateChanged"))
-}
+  applicationState.showForm = !applicationState.showForm;
+  applicationElement.dispatchEvent(
+    new CustomEvent("stateChanged")
+  );
+};
 
 export const getForm = () => {
-  return applicationState.showForm
-}
+  return applicationState.showForm;
+};
+
+export const setSubmitPost = () => {
+  applicationState.submitPost = !applicationState.submitPost;
+  applicationElement.dispatchEvent(
+    new CustomEvent("stateChanged")
+  );
+};
+
+export const getSubmitFields = () => {
+  return applicationState.submitPost;
+};
 
 export const fetchUsers = () => {
   return fetch(`${apiURL}/users`)

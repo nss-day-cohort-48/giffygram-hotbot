@@ -1,14 +1,18 @@
 .miniMode {
   padding: 1rem;
-  margin: 0 25%;
+  margin: 10rem 25%;
   border: 1px dashed slategrey;
   border-radius: 0.5rem;
   text-align: center;
   cursor: pointer;
 }
 
+/* .submitFormFields {
+  margin: 10rem;
+} */
+
 .newPost {
-  margin: 0 25%;
+  margin: 5rem 25%;
 }
 
 .newPost__input {
