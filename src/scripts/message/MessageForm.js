@@ -1,5 +1,17 @@
+import { getForm } from "../data/provider.js";
+
+
 export const MessageForm = () => {
-    return `
+
+    const form = getForm()
+
+    let html = ""
+
+    if (form === false) {
+        html = ""
+    } else {
+        html = `
+    
         <div class="message">
         
             <select class="select--friends">
@@ -10,4 +22,8 @@ export const MessageForm = () => {
             
         </div>
     `
+    }
+
+    return html
 }
+

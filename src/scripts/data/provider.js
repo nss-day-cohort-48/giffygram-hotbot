@@ -14,7 +14,18 @@ const applicationState = {
   favorites: [],
   messages: [],
   userMessages: [],
+  showForm: false
 };
+
+export const setForm = () => {
+  applicationState.showForm = !applicationState.showForm
+
+  applicationElement.dispatchEvent(new CustomEvent("stateChanged"))
+}
+
+export const getForm = () => {
+  return applicationState.showForm
+}
 
 export const fetchUsers = () => {
   return fetch(`${apiURL}/users`)

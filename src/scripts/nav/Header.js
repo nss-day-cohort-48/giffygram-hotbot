@@ -1,7 +1,7 @@
 // import { Pen } from "./MessagePen.js"
 
 import { LoginForm } from "../auth/Login.js";
-import { MessageForm } from "../message/MessageForm.js";
+import { setForm } from "../data/provider.js";
 
 const applicationElement = document.querySelector(".giffygram");
 
@@ -13,7 +13,7 @@ export const Header = () => {
                 HotBotGram
             </h1>
               
-                <img id="directMessageIcon"  src="/images/fountain-pen.svg" onclick alt="Direct message">
+                <img id="directMessageIcon"  src="/images/fountain-pen.svg" alt="Direct message">
             
                 <div class="notification__count">
                 0
@@ -31,6 +31,7 @@ export const Header = () => {
 applicationElement.addEventListener("click", (messageClick) => {
     if (messageClick.target.id === "directMessageIcon") {
         
+        setForm()
     }
 })
 

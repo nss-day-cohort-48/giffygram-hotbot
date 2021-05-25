@@ -3,6 +3,7 @@ const applicationElement = document.querySelector(".giffygram");
 
 export const PostList = () => {
   const posts = getPosts();
+
   let html = `
   <section class="giffyGram__feed">
       <div class="miniMode" id="miniMode">Have a gif to post?</div>
