@@ -39,6 +39,26 @@ export const getUsers = () => {
   return [...applicationState.users];
 };
 
+export const createNewUser = (newUser) => {
+  const fetchUsers = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newUser),
+  };
+
+  return fetch(`${apiURL}/users`, fetchUsers)
+    .then((res) => res.json())
+    .then(() => {
+      applicationElement.dispatchEvent(
+        new CustomEvent("stateChanged")
+      );
+    });
+};
+
+// ------------------- POSTS -------------------
+
 export const fetchPosts = () => {
   return fetch(`${apiURL}/posts`)
     .then((res) => res.json())
@@ -63,7 +83,6 @@ export const createNewPost = (newPost) => {
   return fetch(`${apiURL}/posts`, fetchPosts)
     .then((res) => res.json())
     .then(() => {
-      // return morePosts
       applicationElement.dispatchEvent(
         new CustomEvent("stateChanged")
       );

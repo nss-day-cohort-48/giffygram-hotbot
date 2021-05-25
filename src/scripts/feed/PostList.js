@@ -63,3 +63,6 @@ applicationElement.addEventListener("click", (clickEvent) => {
     createNewPost(newPostFields);
   }
 });
+
+// For miniMode: You need to hide it! 
+// document.getElementById('welcomeDiv').style.display = "block";

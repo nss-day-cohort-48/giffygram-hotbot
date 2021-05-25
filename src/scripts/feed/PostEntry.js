@@ -3,7 +3,6 @@ const applicationElement = document.querySelector(".giffygram");
 
 // applicationElement.addEventListener("click", (clickEvent) => {
 //   if (clickEvent.target.id === "newPost__submit") {
-//     // Get what the user typed into the form fields
 //     const titleHere = document.querySelector(
 //       "input[name='postTitle']"
 //     ).value;

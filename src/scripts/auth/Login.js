@@ -1,5 +1,6 @@
 import { getUsers } from "../data/provider.js";
 import { renderApp } from "../main.js";
+import { RegistrationForm } from "./Register.js";
 
 document.addEventListener("click", (clickEvent) => {
   if (clickEvent.target.id === "loginButton") {
@@ -7,10 +8,10 @@ document.addEventListener("click", (clickEvent) => {
     const userState = getUsers();
 
     const email = document.querySelector(
-      "input[name='email']"
+      "input[name='loginEmail']"
     ).value;
     const password = document.querySelector(
-      "input[name='password']"
+      "input[name='loginPassword']"
     ).value;
 
     for (const user of userState) {
@@ -34,17 +35,19 @@ document.addEventListener("click", (clickEvent) => {
 export const LoginForm = () => {
   return `
         <div class="loginForm">
+        <h2>Welcome to HotBotGram! Please log in with your credentials to get moving.</h2>
             <form>
                 <fieldset>
                     <label for="email">Email:</label>
-                    <input type="text" name="email" autofocus placeholder="Email address" />
+                    <input type="text" name="loginEmail" autofocus placeholder="Email address" />
                 </fieldset>
                 <fieldset>
                     <label for="password">Password:</label>
-                    <input type="password" name="password" placeholder="Password" />
+                    <input type="password" name="loginPassword" placeholder="Password" />
                 </fieldset>
             </form>
             <button id="loginButton">Login</button>
         </div>
+        ${RegistrationForm()}
     `;
 };

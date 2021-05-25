@@ -8,11 +8,12 @@ export const GiffyGram = () => {
   return `
 
       ${Header()}
+      
 
       ${MessageForm()}
 
     <div class="giffygram__feed">
-    
+      
       ${PostList()}
 
     </div>
