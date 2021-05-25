@@ -13,7 +13,7 @@ const applicationElement = document.querySelector(".giffygram");
 export const submitPostFields = () => {
   // CHANGE NAME LATER
   const variable = getSubmitFields();
-  let submitHTML = `<div class="miniMode" id="miniMode">Have a gif to post?</div>`;
+  let submitHTML = "";
 
   if (variable === false) {
     submitHTML = `
@@ -37,9 +37,8 @@ export const submitPostFields = () => {
           </div>
     </div>
     `;
-
-    return submitHTML;
   }
+  return submitHTML;
 };
 
 //click listener with MessageForm() in condition
