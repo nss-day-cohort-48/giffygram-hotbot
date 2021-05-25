@@ -10,7 +10,7 @@ export const PostList = () => {
     html += `
       <div class="post">  
       <h3>${post.title}</h3> 
-      <img class="post__image" src="${post.url}" alt="A very cool turtle team" />
+      <img class="post__image" src="${post.url}" alt="Uh oh! Looks like there's something wrong with that URL." />
       <p class="post__tagline">${post.description}<p>
       </div>
     `;
@@ -49,3 +49,14 @@ applicationElement.addEventListener("click", (clickEvent) => {
 
 // For miniMode: You need to hide it!
 // document.getElementById('welcomeDiv').style.display = "block";
+
+// else if (
+//  clickEvent.target.class === "newPost__input"
+// titleHere.length ||
+// urlHere.length ||
+// descriptionHere.length === 0
+// ) {
+//   window.alert(
+//     "Hey BRO, you need to fill in all the forms to submit a new post!"
+//   );
+// }
