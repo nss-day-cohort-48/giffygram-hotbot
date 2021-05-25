@@ -1,7 +1,6 @@
 import { getPosts, createNewPost } from "../data/provider.js";
 const applicationElement = document.querySelector(".giffygram");
 
-
 export const PostList = () => {
   const posts = getPosts();
 
