@@ -1,5 +1,6 @@
 import { PostList } from "../scripts/feed/PostList.js";
 import { MessageForm } from "./message/MessageForm.js";
+import { Footer } from "./nav/Footer.js";
 import { Header } from "./nav/Header.js";
 
 
@@ -17,5 +18,6 @@ export const GiffyGram = () => {
       ${PostList()}
 
     </div>
+    ${Footer()}
     `;
 };
