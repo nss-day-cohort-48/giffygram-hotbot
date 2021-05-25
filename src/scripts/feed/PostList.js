@@ -4,30 +4,13 @@ const applicationElement = document.querySelector(".giffygram");
 export const PostList = () => {
   const posts = getPosts();
 
-  let html = `
-  <section class="giffyGram__feed">
-      <div class="miniMode" id="miniMode">Have a gif to post?</div>
-      <div class="newPost">
-            <div>
-                <input value="" name="postTitle" class="newPost__input" type="text" placeholder="Title">
-            </div>
-            <div>
-                <input value="" name="postURL" class="newPost__input" type="text" placeholder="URL of gif">
-            </div>
-
-            <textarea name="postDescription" class="newPost__input newPost__description" placeholder="Story behind your gif..."></textarea>
-
-            <button id="newPost__submit">Save</button>
-            <button id="newPost__cancel">Cancel</button>
-        </div>
-  </section>
-  `;
+  let html = "";
 
   for (const post of posts) {
     html += `
       <div class="post">  
       <h3>${post.title}</h3> 
-      <img class="post__image" src="${post.url}" alt="A very cool turtle team" />
+      <img class="post__image" src="${post.url}" alt="Uh oh! Looks like there's something wrong with that URL." />
       <p class="post__tagline">${post.description}<p>
       </div>
     `;
@@ -64,5 +47,16 @@ applicationElement.addEventListener("click", (clickEvent) => {
   }
 });
 
-// For miniMode: You need to hide it! 
+// For miniMode: You need to hide it!
 // document.getElementById('welcomeDiv').style.display = "block";
+
+// else if (
+//  clickEvent.target.class === "newPost__input"
+// titleHere.length ||
+// urlHere.length ||
+// descriptionHere.length === 0
+// ) {
+//   window.alert(
+//     "Hey BRO, you need to fill in all the forms to submit a new post!"
+//   );
+// }

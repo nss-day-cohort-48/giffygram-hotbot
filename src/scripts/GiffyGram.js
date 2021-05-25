@@ -1,7 +1,7 @@
 import { PostList } from "../scripts/feed/PostList.js";
+import { submitPostFields } from "../scripts/feed/NewPost.js";
 import { MessageForm } from "./message/MessageForm.js";
 import { Header } from "./nav/Header.js";
-
 
 export const GiffyGram = () => {
   // Show main main UI
@@ -9,13 +9,12 @@ export const GiffyGram = () => {
 
       ${Header()}
       
-
       ${MessageForm()}
 
-    <div class="giffygram__feed">
-      
-      ${PostList()}
+    <section class="giffygram__feed">
+    ${submitPostFields()}
+    ${PostList()}
 
-    </div>
+    </section>
     `;
 };

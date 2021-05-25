@@ -2,9 +2,33 @@
   "users": [
     {
       "id": 1,
-      "full-name": "Steve Browny",
+      "fullName": "Steve Browny",
       "email": "headwizard@nss.com",
       "password": "steve"
+    },
+    {
+      "fullName": "Gabe Gonzales",
+      "email": "gabe@nss.com",
+      "password": "gabe",
+      "id": 2
+    },
+    {
+      "fullName": "Dakota Lambert",
+      "email": "dakota@nss.com",
+      "password": "dakota",
+      "id": 3
+    },
+    {
+      "fullName": "Monika",
+      "email": "monika@nss.com",
+      "password": "monika",
+      "id": 5
+    },
+    {
+      "fullName": "Ryan Sawyer",
+      "email": "ryan@nss.com",
+      "password": "ryan",
+      "id": 6
     }
   ],
   "posts": [
@@ -37,6 +61,22 @@
       "timestamp": "11:33:08 AM | 5/24/2021",
       "isFavorited": false,
       "id": 5
+    },
+    {
+      "title": "But is it your birthday???",
+      "url": "https://media.giphy.com/media/oXpZ1sLkbCZ9jFhBMx/giphy.gif",
+      "description": "What a day we're having!!!",
+      "timestamp": "1:54:19 PM | 5/24/2021",
+      "isFavorited": false,
+      "id": 6
+    },
+    {
+      "title": "To my instructors...",
+      "url": "https://media.giphy.com/media/w6VY9ka8YDk9ac0Y3T/giphy.gif",
+      "description": "ADULT PLEEEEAAAASSSSEEEE",
+      "timestamp": "11:47:38 AM | 5/25/2021",
+      "isFavorited": false,
+      "id": 7
     }
   ],
   "userPosts": [],
