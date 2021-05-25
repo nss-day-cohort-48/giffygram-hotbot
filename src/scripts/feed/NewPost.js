@@ -31,9 +31,10 @@ export const submitPostFields = () => {
               </div>
   
               <textarea name="postDescription" class="newPost__input newPost__description" placeholder="Story behind your gif..."></textarea>
-  
+              <div class="newPost__buttons">
               <button id="newPost__submit">Save</button>
               <button id="newPost__cancel">Cancel</button>
+              </div>
           </div>
     </div>
     `;
@@ -44,6 +45,12 @@ export const submitPostFields = () => {
 //click listener with MessageForm() in condition
 applicationElement.addEventListener("click", (submitClick) => {
   if (submitClick.target.id === "miniMode") {
+    setSubmitPost();
+  }
+});
+
+applicationElement.addEventListener("click", (nothingToPost) => {
+  if (nothingToPost.target.id === "newPost__cancel") {
     setSubmitPost();
   }
 });
