@@ -1,7 +1,7 @@
 import { PostList } from "../scripts/feed/PostList.js";
+import { MessageForm } from "./message/MessageForm.js";
 import { Header } from "./nav/Header.js";
 
-const applicationElement = document.querySelector(".giffygram");
 
 export const GiffyGram = () => {
   // Show main main UI
@@ -9,6 +9,8 @@ export const GiffyGram = () => {
 
       ${Header()}
       
+
+      ${MessageForm()}
 
     <div class="giffygram__feed">
       
