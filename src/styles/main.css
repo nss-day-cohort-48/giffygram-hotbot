@@ -14,6 +14,8 @@ button,
 input,
 select,
 textarea {
+  resize:vertical;
+  overflow:auto;
   color: #404040;
   font-family: "Comfortaa", Arial, sans-serif;
   font-size: 1rem;
@@ -21,7 +23,9 @@ textarea {
   padding: 0;
   margin: 0;
 }
-
+button {
+  resize: none;
+}
 h1,
 h2,
 h3,
