@@ -8,18 +8,18 @@ const applicationElement = document.querySelector(".giffygram");
 export const Header = () => {
   return `
         <header class="navigation">
-        <img src="../images/hotbot.png" class="navigation__icon ">
-            <h1 class="navigation__icon">
+        <img src="../images/hotbot.png" class="navigation__icon navigation__item">
+            <h1 class="navigation__name navigation__item">
                 HotBotGram
             </h1>
               
-                <img id="directMessageIcon"  src="/images/fountain-pen.svg" alt="Direct message">
+                <img id="directMessageIcon" class="navigation__item" src="/images/fountain-pen.svg" alt="Direct message">
             
-                <div class="notification__count">
+                <div class="notification__count navigation__item">
                 0
                 </div>
 
-                <div class="navigation__logout">
+                <div class="navigation__logout navigation__item">
                     <button  id="logout" class="logoutButton ">LOGOUT</button>
                 </div>
         </header>

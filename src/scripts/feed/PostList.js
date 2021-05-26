@@ -14,7 +14,7 @@ export const PostList = () => {
 
   for (const post of posts) {
     html += `
-      <div class="post">  
+      <div class="post newPost__drop">  
       <h3>${post.title}</h3> 
       <img class="post__image" src="${
         post.url
@@ -27,10 +27,13 @@ export const PostList = () => {
           }
           return false;
         }).fullName
-      } </p>
+
+      } at ${post.timestamp}</p>
+
+  
       </div>
     `;
-  }
+  } 
 
   return html;
 };
@@ -55,7 +58,7 @@ applicationElement.addEventListener("click", (clickEvent) => {
       description: descriptionHere,
       timestamp:
         new Date().toLocaleTimeString() +
-        " | " +
+        " on " +
         new Date().toLocaleDateString(),
       isFavorited: false,
       userId: parseInt(submittingUser),
