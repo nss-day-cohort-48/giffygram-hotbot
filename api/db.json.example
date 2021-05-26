@@ -38,53 +38,35 @@
       "url": "https://media.giphy.com/media/WynKmCK0LwykM/giphy.gif",
       "description": "Squirtle Squad",
       "timestamp": "2021-05-21",
+      "userId": 1,
       "isFavorited": false
     },
     {
-      "title": "Bugz",
-      "url": "https://media.giphy.com/media/66dLOWrLqrgxWHSeVR/giphy.gif",
-      "description": "I love debugger!!",
-      "id": 3
+      "title": "BLM",
+      "url": "https://media.giphy.com/media/lxzkqqFj30xVLXMlhm/giphy.gif",
+      "description": "Too right",
+      "timestamp": "11:10:27 AM | 5/26/2021",
+      "isFavorited": false,
+      "userId": 3,
+      "id": 12
     },
     {
-      "title": "When lunch is only 30 away",
-      "url": "https://media.giphy.com/media/0kbIdrKDPV0hMyPcew/giphy.gif",
-      "description": "It do be like that sometimes",
-      "timestamp": 1621873829385,
+      "title": "To You",
+      "url": "https://media.giphy.com/media/13bdJQNZ2HpXQk/giphy.gif",
+      "description": "From Me <3",
+      "timestamp": "11:14:33 AM | 5/26/2021",
       "isFavorited": false,
-      "id": 4
+      "userId": 3,
+      "id": 13
     },
     {
-      "title": "Lunch <3",
-      "url": "https://media.giphy.com/media/mUQCVhZxs8XUpkHo4u/giphy.gif",
-      "description": "<3",
-      "timestamp": "11:33:08 AM | 5/24/2021",
+      "title": "???",
+      "url": "https://media.giphy.com/media/5oPUnOQYUhLjO/giphy.gif",
+      "description": "I know what code is",
+      "timestamp": "11:31:36 AM | 5/26/2021",
       "isFavorited": false,
-      "id": 5
-    },
-    {
-      "title": "But is it your birthday???",
-      "url": "https://media.giphy.com/media/oXpZ1sLkbCZ9jFhBMx/giphy.gif",
-      "description": "What a day we're having!!!",
-      "timestamp": "1:54:19 PM | 5/24/2021",
-      "isFavorited": false,
-      "id": 6
-    },
-    {
-      "title": "To my instructors...",
-      "url": "https://media.giphy.com/media/w6VY9ka8YDk9ac0Y3T/giphy.gif",
-      "description": "ADULT PLEEEEAAAASSSSEEEE",
-      "timestamp": "11:47:38 AM | 5/25/2021",
-      "isFavorited": false,
-      "id": 7
-    },
-    {
-      "title": "HotBotBling",
-      "url": "https://media.giphy.com/media/8zT0D36Myf9C0/giphy.gif",
-      "description": "That can only mean one thing....",
-      "timestamp": "10:39:30 AM | 5/26/2021",
-      "isFavorited": false,
-      "id": 8
+      "userId": 3,
+      "id": 14
     }
   ],
   "userPosts": [],
