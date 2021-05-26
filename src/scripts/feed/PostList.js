@@ -27,10 +27,13 @@ export const PostList = () => {
           }
           return false;
         }).fullName
-      } </p>
+
+      } at ${post.timestamp}</p>
+
+  
       </div>
     `;
-  }
+  } 
 
   return html;
 };
@@ -55,7 +58,7 @@ applicationElement.addEventListener("click", (clickEvent) => {
       description: descriptionHere,
       timestamp:
         new Date().toLocaleTimeString() +
-        " | " +
+        " on " +
         new Date().toLocaleDateString(),
       isFavorited: false,
       userId: parseInt(submittingUser),
