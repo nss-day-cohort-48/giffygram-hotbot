@@ -61,23 +61,18 @@ export const fetchPosts = () => {
 };
 
 export const getPosts = () => {
+  const filteredPosts = applicationState.posts.sort((c, n) => {
+    const currentTime = c.timestamp.split("|")[1];
+    const nextTime = n.timestamp.split("|")[1];
 
-  const filteredPosts = applicationState.posts.sort((c,n) => {
-    
-    const currentTime = c.timestamp.split("|")[1]
-    const nextTime = n.timestamp.split("|")[1]
+    const parsedCurrentTime = Date.parse(currentTime);
+    const parsedNextTime = Date.parse(nextTime);
 
-    const parsedCurrentTime = Date.parse(currentTime)
-    const parsedNextTime = Date.parse(nextTime)
-
-    return parsedNextTime - parsedCurrentTime
-
-  })
+    return parsedNextTime - parsedCurrentTime;
+  });
 
   return filteredPosts;
 };
-
-
 
 export const createNewPost = (newPost) => {
   const fetchPosts = {
