@@ -8,7 +8,9 @@ const applicationElement = document.querySelector(".giffygram");
 export const Header = () => {
   return `
         <header class="navigation">
-        <img src="../images/hotbot.png" class="navigation__icon navigation__item">
+          
+            <img src="../images/hotbot.png" class="navigation__icon navigation__item">
+          
             <h1 class="navigation__name navigation__item">
                 HotBotGram
             </h1>

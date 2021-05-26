@@ -21,12 +21,13 @@
     font-size: 1rem;
     padding-left: 0.5rem;
     padding-top: 0.1rem;
+    align-self: center;
 }
 
 .navigation__icon {
-    max-height: 5rem;
+    max-height: 3rem;
     justify-content: flex-start;
-    cursor: pointer;
+    align-self: center;
 }
 
 
@@ -73,11 +74,10 @@
 #directMessageIcon {
     cursor: pointer;
     align-self: center;
-    max-height: 3.75rem;
+    max-height: 2rem;
 }
 
 .logoutButton {
-    border: none;
     border-radius: 1rem;
     background: rgb(114, 221, 212);
     align-self: center;
