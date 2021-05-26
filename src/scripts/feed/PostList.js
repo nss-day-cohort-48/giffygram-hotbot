@@ -1,4 +1,8 @@
-import { getPosts, createNewPost } from "../data/provider.js";
+import {
+  getPosts,
+  createNewPost,
+  setSubmitPost,
+} from "../data/provider.js";
 const applicationElement = document.querySelector(".giffygram");
 
 export const PostList = () => {
@@ -44,6 +48,7 @@ applicationElement.addEventListener("click", (clickEvent) => {
     };
 
     createNewPost(newPostFields);
+    setSubmitPost();
   }
 });
 

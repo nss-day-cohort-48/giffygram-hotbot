@@ -19,7 +19,7 @@
       "id": 3
     },
     {
-      "fullName": "Monika",
+      "fullName": "Monika Kay",
       "email": "monika@nss.com",
       "password": "monika",
       "id": 5
@@ -77,6 +77,14 @@
       "timestamp": "11:47:38 AM | 5/25/2021",
       "isFavorited": false,
       "id": 7
+    },
+    {
+      "title": "HotBotBling",
+      "url": "https://media.giphy.com/media/8zT0D36Myf9C0/giphy.gif",
+      "description": "That can only mean one thing....",
+      "timestamp": "10:39:30 AM | 5/26/2021",
+      "isFavorited": false,
+      "id": 8
     }
   ],
   "userPosts": [],

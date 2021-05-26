@@ -1,7 +1,7 @@
 import { getUsers } from "../data/provider.js";
 
 export const Footer = () => {
-  const users = getUsers()
+  const users = getUsers();
   return `<footer class="footer">
   
   <h1>
@@ -43,12 +43,12 @@ Posts by user
   <option>
   Choose user
   </option>
-  ${users.map((user)=>{
- return `
+  ${users.map((user) => {
+    return `
  <option>
  ${user.fullName}
  </option>
- `
+ `;
   })}
   </select>
 
@@ -56,5 +56,5 @@ Posts by user
   
   
   
-  `
+  `;
 };
