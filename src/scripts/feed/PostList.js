@@ -1,8 +1,14 @@
-import { getPosts, createNewPost } from "../data/provider.js";
+import {
+  getPosts,
+  createNewPost,
+  setSubmitPost,
+  getUsers,
+} from "../data/provider.js";
 const applicationElement = document.querySelector(".giffygram");
 
 export const PostList = () => {
   const posts = getPosts();
+  const users = getUsers();
 
   let html = "";
 
@@ -10,8 +16,18 @@ export const PostList = () => {
     html += `
       <div class="post">  
       <h3>${post.title}</h3> 
-      <img class="post__image" src="${post.url}" alt="Uh oh! Looks like there's something wrong with that URL." />
-      <p class="post__tagline">${post.description}<p>
+      <img class="post__image" src="${
+        post.url
+      }" alt="Uh oh! Looks like there's something wrong with that URL." />
+      <p class="post__tagline">${post.description}</p>
+      <p class="post__author">Posted by ${
+        users.find((user) => {
+          if (post.userId === user.id) {
+            return true;
+          }
+          return false;
+        }).fullName
+      } </p>
       </div>
     `;
   }
@@ -31,6 +47,7 @@ applicationElement.addEventListener("click", (clickEvent) => {
     const descriptionHere = document.querySelector(
       "textarea[name='postDescription']"
     ).value;
+    const submittingUser = localStorage.getItem("gg_user");
 
     const newPostFields = {
       title: titleHere,
@@ -41,9 +58,13 @@ applicationElement.addEventListener("click", (clickEvent) => {
         " | " +
         new Date().toLocaleDateString(),
       isFavorited: false,
+      userId: parseInt(submittingUser),
     };
 
+    // Definte objects
+
     createNewPost(newPostFields);
+    setSubmitPost();
   }
 });
 
