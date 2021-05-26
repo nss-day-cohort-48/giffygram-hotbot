@@ -37,7 +37,7 @@
       "title": "Snack break",
       "url": "https://media.giphy.com/media/WynKmCK0LwykM/giphy.gif",
       "description": "Squirtle Squad",
-      "timestamp": "2021-05-21",
+      "timestamp": "11:14:33 AM | 1/1/2021",
       "userId": 1,
       "isFavorited": false
     },
@@ -45,7 +45,7 @@
       "title": "BLM",
       "url": "https://media.giphy.com/media/lxzkqqFj30xVLXMlhm/giphy.gif",
       "description": "Too right",
-      "timestamp": "11:10:27 AM | 5/26/2021",
+      "timestamp": "11:10:27 AM | 5/26/1999",
       "isFavorited": false,
       "userId": 3,
       "id": 12
@@ -63,10 +63,28 @@
       "title": "???",
       "url": "https://media.giphy.com/media/5oPUnOQYUhLjO/giphy.gif",
       "description": "I know what code is",
-      "timestamp": "11:31:36 AM | 5/26/2021",
+      "timestamp": "11:31:36 AM | 5/26/2020",
       "isFavorited": false,
       "userId": 3,
       "id": 14
+    },
+    {
+      "title": "CHAboi",
+      "url": "https://media.giphy.com/media/hPTZgtzfRIB5Nfb5rL/giphy.gif",
+      "description": "chuggin' it",
+      "timestamp": "2:07:51 PM | 5/26/2021",
+      "isFavorited": false,
+      "userId": 2,
+      "id": 15
+    },
+    {
+      "title": "WEEEZARD",
+      "url": "",
+      "description": "Yep",
+      "timestamp": "3:30:14 PM | 5/26/2021",
+      "isFavorited": false,
+      "userId": 2,
+      "id": 16
     }
   ],
   "userPosts": [],
