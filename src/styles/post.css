@@ -1,10 +1,11 @@
 .miniMode {
-  padding: 1rem;
-  margin: 10rem 25%;
-  border: 1px dashed slategrey;
-  border-radius: 0.5rem;
-  text-align: center;
-  cursor: pointer;
+    padding: 1rem;
+    margin: 5rem 25% 4rem;
+    border: 4px outset rgb(114, 221, 212);
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(143 143 143);
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
 }
 
 .newPost {
@@ -29,11 +30,13 @@
 } */
 
 .newPost__drop {
-  padding: 1rem;
-  color: gray;
-  font-size: 1rem;
-  border: 1px dotted lightgrey;
-  text-align: center;
+    padding: 1rem;
+    color: dimgray;
+    font-size: 1rem;
+    border-radius: 1.5%;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(143 143 143);
+    border: 4px outset rgb(114, 221, 212);
+    text-align: center;
 }
 
 .newPost__upload {
@@ -56,7 +59,7 @@
 }
 
 .post {
-  margin: 0 25%;
+  margin: 0 25% 2rem;
   flex-basis: 50%;
 }
 
