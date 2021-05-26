@@ -20,7 +20,8 @@ const applicationState = {
 
 // ------------------- USERS -------------------
 
-export const fetchUsers = () => {
+export const 
+fetchUsers = () => {
   return fetch(`${apiURL}/users`)
     .then((res) => res.json())
     .then((usersResponse) => {
