@@ -2,7 +2,7 @@ import {
   getPosts,
   createNewPost,
   setSubmitPost,
-  getUsers,
+  getUsers
 } from "../data/provider.js";
 const applicationElement = document.querySelector(".giffygram");
 
@@ -28,7 +28,7 @@ export const PostList = () => {
           return false;
         }).fullName
 
-      } at ${post.timestamp}</p>
+      } at ${post.timestamp} </p>
 
   
       </div>
@@ -37,6 +37,8 @@ export const PostList = () => {
 
   return html;
 };
+
+
 
 applicationElement.addEventListener("click", (clickEvent) => {
   if (clickEvent.target.id === "newPost__submit") {
