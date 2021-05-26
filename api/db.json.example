@@ -81,10 +81,19 @@
       "title": "WEEEZARD",
       "url": "",
       "description": "Yep",
-      "timestamp": "3:30:14 PM | 5/26/2021",
+      "timestamp": "3:30:14 PM | 4/20/2021",
       "isFavorited": false,
       "userId": 2,
       "id": 16
+    },
+    {
+      "title": "Boogie with it",
+      "url": "https://media.giphy.com/media/7zrQ7wu4HIR3y/giphy.gif",
+      "description": "Caught me dancin",
+      "timestamp": "3:08:52 PM | 5/26/2021",
+      "isFavorited": false,
+      "userId": 3,
+      "id": 17
     }
   ],
   "userPosts": [],
