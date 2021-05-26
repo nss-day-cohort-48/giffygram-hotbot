@@ -16,9 +16,18 @@ export const PostList = () => {
     html += `
       <div class="post">  
       <h3>${post.title}</h3> 
-      <img class="post__image" src="${post.url}" alt="Uh oh! Looks like there's something wrong with that URL." />
+      <img class="post__image" src="${
+        post.url
+      }" alt="Uh oh! Looks like there's something wrong with that URL." />
       <p class="post__tagline">${post.description}</p>
-      <p class="post__author">Posted by ${users.fullName} </p>
+      <p class="post__author">Posted by ${
+        users.find((user) => {
+          if (post.userId === user.id) {
+            return true;
+          }
+          return false;
+        }).fullName
+      } </p>
       </div>
     `;
   }
