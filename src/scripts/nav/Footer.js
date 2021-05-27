@@ -4,10 +4,10 @@ export const Footer = () => {
   const users = getUsers();
   return `<footer class="footer">
   
-  <h1>
+  <h1 class="footer__item">
   MONTH
   </h1>
-  <select>
+  <select class="footer__item">
   <option>
   Jan
   </option>
@@ -17,18 +17,18 @@ export const Footer = () => {
   </select> 
   
 
- <h2>
+ <h2 class="footer__item">
  Day
- <select>
+ </h2>
+ <select class="footer__item">
   <option>
   Fri
   </option>
   </select> 
- </h2>
 
- <h3>
+ <h3 class="footer__item">
 Year
- <select>
+ <select class="footer__item">
   <option>
   2021
   <select>
@@ -36,10 +36,10 @@ Year
   </select> 
  </h3>
  
- <h3>
+ <h3 class="footer__item">
 Posts by user
  </h3>
-  <select>
+  <select class="footer__item">
   <option>
   Choose user
   </option>
